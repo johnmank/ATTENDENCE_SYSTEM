@@ -1,0 +1,4 @@
+** create a account in GOOGLE FIREBASE**
+** create a new Project
+** go to project settings >> Service Accounts >> Database Secrets >> copy the code >> paste in TAG_code.ino **
+** after >> go to DATABASE >>Create REALTIME DATABASE >>make changes as shown in database.jpg 

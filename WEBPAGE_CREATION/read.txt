@@ -1,0 +1,9 @@
+** goto the link W3schools.com >> LEARN HTML TAGS >> Create your own  LOGIN PAGE >>
+** Learn javascript from the same link >> make your webpage more dynamic
+
+
+
+** paste apikey,databse url,authdomain from your corresponding project
+
+
+NOTE:::SAMPLE HTML CODE IS GIVEN

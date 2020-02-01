@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://media.gettyimages.com/photos/blue-wooden-background-picture-id538530955?b=1&k=6&m=538530955&s=612x612&w=0&h=U-_xpl6Ik0aSvTeVd4CMUxeGNMOjIFcGVQwzAFg5HlI=");
+  
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+
+  height: 100%; 
+  
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  border-radius: 44px;
+  transition: 0.25s;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	
+  text-align: center;
+}
+table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: .1em;
+
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: #ffaa00;
+  font-size: 1.50em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+ align: center;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #014055;
+}
+
+
+</style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body><div class="bg-image"></div>
+ <div class="bg-text"> 
+
+<div class="container">
+  <h2>Attendance</h2>
+            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Reg.No</th>
+        <th>Student Name</th>
+        <th>1st hour</th>
+ <th>2nd hour</th>
+ <th>3rd hour</th>
+ <th>4th hour</th>
+ <th>5th hour</th>
+ <th>6th hour</th>
+ <th>7th hour</th>
+ <th>hours present</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Noaha</td>
+        <td><span id="a" class="logo-small"></td>
+<td><span id="aa" class="logo-small"></td>
+<td><span id="ab" class="logo-small"></td>
+<td><span id="ac" class="logo-small"></td>
+<td><span id="ad" class="logo-small"></td>
+<td><span id="ae" class="logo-small"></td>
+<td><span id="af" class="logo-small"></td>
+<td><span id="ag" class="logo-small"></td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Adam</td>
+        <td><span id="b" class="logo-small"></td>
+<td><span id="ba" class="logo-small"></td>
+<td><span id="bb" class="logo-small"></td>
+<td><span id="bc" class="logo-small"></td>
+<td><span id="bd" class="logo-small"></td>
+<td><span id="be" class="logo-small"></td>
+<td><span id="bf" class="logo-small"></td>
+<td><span id="bg" class="logo-small"></td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Jonas</td>
+        <td><span id="c" class="logo-small"></td>
+<td><span id="ca" class="logo-small"></td>
+<td><span id="cb" class="logo-small"></td>
+<td><span id="cc" class="logo-small"></td>
+<td><span id="cd" class="logo-small"></td>
+<td><span id="ce" class="logo-small"></td>
+<td><span id="cf" class="logo-small"></td>
+<td><span id="cg" class="logo-small"></td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>Martha</td>
+        <td><span id="d" class="logo-small"></td>
+<td><span id="da" class="logo-small"></td>
+<td><span id="db" class="logo-small"></td>
+<td><span id="dc" class="logo-small"></td>
+<td><span id="dd" class="logo-small"></td>
+<td><span id="de" class="logo-small"></td>
+<td><span id="df" class="logo-small"></td>
+<td><span id="dg" class="logo-small"></td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>Michel</td>
+        <td><span id="e" class="logo-small"></td>
+<td><span id="ea" class="logo-small"></td>
+<td><span id="eb" class="logo-small"></td>
+<td><span id="ec" class="logo-small"></td>
+<td><span id="ed" class="logo-small"></td>
+<td><span id="ee" class="logo-small"></td>
+<td><span id="ef" class="logo-small"></td>
+<td><span id="eg" class="logo-small"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+<script>
+$(document).ready(function(){
+ $(".slideanim").addClass("slide");
+$(document).ready(function(){
+
+ 
+ $(".slideanim").addClass("slide");
+        });
+$(document).ready(function(){
+
+ 
+ $(".slideanim").addClass("slide");
+        });
+
+
+
+
+});
+// Set the configuration for your app
+  // TODO: Replace with your project's config object
+  var config = {
+    apiKey: ""
+    authDomain: "",
+    databaseURL: "",
+    
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
+console.log(database);
+
+ref = firebase.database().ref('noaha');
+ref.on('value', function(snapshot) {
+data = snapshot.val();
+$("#a").html(data.a);
+$("#aa").html(data.aa);
+$("#ab").html(data.ab);
+$("#ac").html(data.ac);
+$("#ad").html(data.ad);
+$("#ae").html(data.ae);
+$("#af").html(data.af);
+$("#ag").html(data.ag);
+
+});
+ref = firebase.database().ref('adam');
+ref.on('value', function(snapshot) {
+data = snapshot.val();
+$("#b").html(data.b);
+$("#ba").html(data.ba);
+$("#bb").html(data.bb);
+$("#bc").html(data.bc);
+$("#bd").html(data.bd);
+$("#be").html(data.be);
+$("#bf").html(data.bf);
+$("#bg").html(data.bg);
+
+});
+ref = firebase.database().ref('jonas');
+ref.on('value', function(snapshot) {
+data = snapshot.val();
+$("#c").html(data.c);
+$("#ca").html(data.ca);
+$("#cb").html(data.cb);
+$("#cc").html(data.cc);
+$("#cd").html(data.cd);
+$("#ce").html(data.ce);
+$("#cf").html(data.cf);
+$("#cg").html(data.cg);
+
+});
+ref = firebase.database().ref('martha');
+ref.on('value', function(snapshot) {
+data = snapshot.val();
+$("#d").html(data.d);
+$("#da").html(data.da);
+$("#db").html(data.db);
+$("#dc").html(data.dc);
+$("#dd").html(data.dd);
+$("#de").html(data.de);
+$("#df").html(data.df);
+$("#dg").html(data.dg);
+
+});
+ref = firebase.database().ref('michel');
+ref.on('value', function(snapshot) {
+data = snapshot.val();
+$("#e").html(data.e);
+$("#ea").html(data.ea);
+$("#eb").html(data.eb);
+$("#ec").html(data.ec);
+$("#ed").html(data.ed);
+$("#ee").html(data.ee);
+$("#ef").html(data.ef);
+$("#eg").html(data.eg);
+
+});
+</script>
+</body>
+</html>
