@@ -1,12 +1,16 @@
 #ATTENDANCE_SYSTEM based on IOT
+
 Me and my team pursuing the course of Electronics and Instrumentation Engineering developed an online attendance monitoring system based on IOT under the guidance of Mrs Sreevidya P Menon and our Alumini Mr Arun.
 
 #COMPONENTS REQUIRED
+
 RFID recceiver
 ESP8266 wifi module
 Google Firebase Account
 Web page ( to display the content )
+
 #WORKING
+
 Identity tag of students is placed on the RFID receiver and a RFID code is read by the RFID module and the code is processed. If the code is valid the ESP8266 sents corresponding data to the Google firebase Database and updates are recorded. The web page access the data from the FIREBASE database and accordingly output is displayed. Attendance will bw taken every seven Hours.A tag can only be used 7 times a day.
 
 #INSTALLATION AND SETUP
